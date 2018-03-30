@@ -1,14 +1,22 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Weather App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h1 style="text-align: center">Today's Weather</h1>
+
+<ion-card>
+  <ion-card-header>
+    Weather Information
+  </ion-card-header>
+
+  <ion-card-content>
+    {{result | json}}
+  </ion-card-content>
+
+</ion-card>
 </ion-content>
